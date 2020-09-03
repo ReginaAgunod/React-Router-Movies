@@ -10,6 +10,7 @@ import App from './App';
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
+    // Nesting App in Router to access router data (Turned on Router)
     <Router>
         <App />
     </Router>,
