@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
 import axios from 'axios';
+import React, {useEffect, useState} from 'react';
+import {Route, Switch} from 'react-router-dom';
 
-import SavedList from './Movies/SavedList';
-import MovieList from './Movies/MovieList'
 import Movie from './Movies/Movie'
+import MovieList from './Movies/MovieList'
+import SavedList from './Movies/SavedList';
 
 const App = () => {
   const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
