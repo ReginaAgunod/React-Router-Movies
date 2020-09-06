@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const MovieCard = props => {
+const MovieCard = (props) => {
   return (
-      <div className = "movie-card"><h2>{props.movie.title}<
-          /h2>
+    <div className="movie-card">
+      <h2>{props.movie.title}</h2>
       <div className="movie-director">
         Director: <em>{props.movie.director}</em>
       </div>
@@ -11,13 +11,14 @@ const MovieCard = props => {
         Metascore: <strong>{props.movie.metascore}</strong>
       </div>
       <h3>Actors</h3>
-      <p className = "movie-star">{props.movie.stars}<
-          /p>
-      { 
-          props.movie.stars.map(item =>
-          <div key={item} className="movie-star">{item}</div>)
-} < /div>
-  )
+      <p className="movie-star">{props.movie.stars}</p>
+      {props.movie.stars.map((item) => (
+        <div key={item} className="movie-star">
+          {item}
+        </div>
+      ))}{" "}
+    </div>
+  );
 };
 
 export default MovieCard;
